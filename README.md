@@ -1,16 +1,29 @@
 # modular_yoga_session_app
 
-A new Flutter project.
 
-## Getting Started
+Modular Yoga Session App
+This is a simple Flutter app for guided yoga sessions. Everything is powered by a JSON file: pose names, images, audio, durations, and script cues are all loaded dynamically. If you want to update, extend, or swap out the whole session, just change or replace the JSON/assets—no code change required.
 
-This project is a starting point for a Flutter application.
+Key features:
 
-A few resources to get you started if this is your first Flutter project:
+Reads all pose, image, and audio info from a single JSON file on startup.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+For each pose, shows the right image, plays the matching audio, and advances automatically after the set time.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Audio, image, and timing always stay in sync, even if you pause or resume.
+
+Modular: Drop in a new JSON (with new asset files), and the app immediately uses the new session—no need to touch code.
+
+Includes play, pause, resume, skip, progress bar, and timer display as core controls.
+
+How to use:
+
+Update session info in assets/poses.json. Add or remove sequences, change audio/image file names/paths, or swap out durations as you like.
+
+Place matching image files under assets/images/ and audio files under assets/audio/.
+
+Run the app—your new session appears, fully synced and ready to go.
+
+Use the playback controls to guide your session: start, pause, resume, or skip as needed.
+
+Feel free to add background music or a preview/summary page for all poses if you want bonus features later. The core logic automatically adapts to whatever content you provide in the JSON and assets.
